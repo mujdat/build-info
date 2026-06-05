@@ -1,0 +1,17 @@
+service: my-app
+image: mujdat/build-info
+
+servers:
+  web:
+    - "<%= ENV['DEPLOY_HOST'] %>"
+
+proxy:
+  app_port: 3131
+
+registry:
+  username: mujdat
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+builder:
+  arch: amd64
