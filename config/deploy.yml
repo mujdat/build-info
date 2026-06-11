@@ -6,6 +6,8 @@ servers:
     - "<%= ENV['DEPLOY_HOST'] %>"
 
 proxy:
+  ssl: true
+  host: <%= ENV['BUILD_INFO_HOST'] %>
   app_port: 3131
   healthcheck:
     path: /
