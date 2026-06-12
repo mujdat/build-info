@@ -1,4 +1,4 @@
-service: my-app
+service: build-info-app
 image: mujdat/build-info
 
 servers:
